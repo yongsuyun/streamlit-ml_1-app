@@ -95,7 +95,7 @@ def fetch_api_data(service_key, year="2023"):
     url = "http://apis.data.go.kr/B552061/frequentzoneFreezing/getRestFrequentzoneFreezing"
     params = {
         "serviceKey": service_key,
-        "searchYearCd": 2023,
+        "searchYearCd": year,
         "siDo": "",
         "guGun": "",
         "type": "json",
@@ -246,7 +246,7 @@ elif page == "데이터 수집":
         service_key = st.text_input(
             "API 서비스 키 입력",
             type="password",
-            placeholder="ygURkvAaAcQjHLsfP7GB+W/CrkKlhcu3ZZWDt6ZiujtxH99srb1fGi70vQSw59s7DyaoUk+6cE2gz7IR3P/pnQ=="
+            placeholder=" .. 여기에 API 서비스키(Decoding용, 오류시 Encoding용)를 입력 .."
         )
         
         year = st.selectbox("분석 연도", ["2023", "2022", "2021"])
