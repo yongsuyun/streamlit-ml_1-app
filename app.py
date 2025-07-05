@@ -585,14 +585,14 @@ elif page == "배포 가이드":
     # requirements.txt
     st.subheader("requirements.txt")
     
-    requirements = """streamlit==1.28.0
-pandas==2.0.3
-numpy==1.24.3
-plotly==5.15.0
-scikit-learn==1.3.0
-matplotlib==3.7.1
-requests==2.31.0
-urllib3==2.0.4"""
+    requirements = """streamlit
+pandas
+numpy
+plotly
+scikit-learn
+matplotlib
+requests
+urllib3"""
     
     st.code(requirements, language="text")
     
