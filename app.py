@@ -567,7 +567,7 @@ elif page == "배포 가이드":
     with col1:
         st.markdown("""
         ### 필요 파일
-        1. `WinterAccident_ML.py` - 메인 애플리케이션
+        1. `app.py` - 메인 애플리케이션
         2. `requirements.txt` - 의존성 패키지
         3. `README.md` - 프로젝트 설명
         4. `.gitignore` - Git 제외 파일
